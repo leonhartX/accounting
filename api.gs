@@ -290,6 +290,7 @@ function handleCreditMail() {
           }
           addCreditRecord(data, slackApp, prop.channel_id);
           content = content.substring(content.indexOf("\n", maxIndex) + 1);
+          maxIndex = 0;
           Logger.log(content);
         }
       }
