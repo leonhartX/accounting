@@ -84,7 +84,7 @@ function addOutgo(param) {
   var date = data.shift();
   var range = getInsertRange(date.toLocaleDateString());
   range.setValues([data]);
-  return "记账成功:\r\n日期： `" + date.toLocaleDateString() + "` ,  种类： `" + data[0] + "` ,  内容： `" + data[4] + "` ,  消费金额： `" + data[1] + " `";
+  return "记账成功:\r\n日期： `" + date.toLocaleDateString() + "` ,  种类： `" + data[0] + "` ,  内容： `" + data[4] + "` ,  消费金额： `" + data[1] + "`";
 }
 
 /*
@@ -98,7 +98,7 @@ function addIncome(param) {
   var date = data.shift();
   var range = getInsertRange(date.toLocaleDateString());
   range.setValues([data]);
-  return "记账成功:\r\n日期： `" + date.toLocaleDateString() + "` ,  种类： `" + data[2] + "` ,  内容： `" + data[4] + "` ,  收入金额： `" + data[3] + " `";
+  return "记账成功:\r\n日期： `" + date.toLocaleDateString() + "` ,  种类： `" + data[2] + "` ,  内容： `" + data[4] + "` ,  收入金额： `" + data[3] + "`";
 }
 
 /*
